@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<project name="FPV-OpenBook" default="build">
+
+	<target name="init">
+		<mkdir dir="build"/>
+		<mkdir dir="build/html"/>
+		<mkdir dir="build/pdf"/>
+		<mkdir dir="build/fo"/>
+		<copydir src="src/Docbook/xsl/" dest=""></copydir>
+	</target>
+	
+	<target name="build" depends="init" description="Build FPV OpenBook">
+		
+	</target>
+	
+	<target name="install" description="Installing required software">
+	</target>
+	
+	<target name="html">
+	</target>
+	
+	<target name="pdf">
+	</target>
+	
+	<target name="fo">
+	</target>
+	
+	<target name="man">
+	</target>
+	
+	<target name="rtf">
+	</target>
+	
+	<target name="help">
+	</target>
+	
+</project>
