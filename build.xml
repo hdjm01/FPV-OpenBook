@@ -6,7 +6,6 @@
 		<mkdir dir="build/html"/>
 		<mkdir dir="build/pdf"/>
 		<mkdir dir="build/fo"/>
-		<copydir src="src/Docbook/xsl/" dest=""></copydir>
 	</target>
 	
 	<target name="build" depends="init" description="Build FPV OpenBook">
