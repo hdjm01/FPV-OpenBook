@@ -1,0 +1,8 @@
+
+
+<!ELEMENT thesis (info, chapter, appendix, bibliography)>
+
+<!ATTLIST thesis
+	xmlns	CDATA	#FIXED	"http://docbook.org/ns/docbook"
+	lang	CDATA	#IMPLIED
+>

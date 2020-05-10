@@ -1,0 +1,23 @@
+<!-- 
+-//HM-DMT//text-class DocBook 4.5 Extension//EN 
+
+$Id: mydocbook.dtd 455 2013-11-13 00:51:10Z hdjm $
+
+-->
+<!ENTITY % xinclude SYSTEM "xinclude.mod">
+%xinclude;
+
+
+<!ENTITY % docbook_base SYSTEM "docbookx.dtd">
+%docbook_base;
+
+
+
+<!-- MathML -->
+<!ENTITY % MATHML.prefixed "INCLUDE">
+<!ENTITY % MATHML.prefix "mml">
+<!ENTITY % equation.content "(alt?, (graphic+|mediaobject+|mml:math))">
+<!ENTITY % inlineequation.content
+                "(alt?, (inlinegraphic+|inlinemediaobject+|mml:math))">
+<!ENTITY % mathml PUBLIC "-//W3C//DTD MathML 2.0//EN" "/Sandbox/MathML/dtd/mathml2.dtd">
+%mathml;

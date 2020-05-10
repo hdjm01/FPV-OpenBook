@@ -1,0 +1,17 @@
+<!-- Version 5.0 -->
+<!-- todo: Pfad zur DTD ist defekt -->
+
+<!ENTITY % dbx SYSTEM "docbookx.dtd">
+%dbx;
+
+<!ENTITY % xinclude SYSTEM "xinclude.mod">
+%xinclude;
+
+<!-- MathML -->
+<!ENTITY % MATHML.prefixed "INCLUDE">
+<!ENTITY % MATHML.prefix "mml">
+<!ENTITY % equation.content "(alt?, (graphic+|mediaobject+|mml:math))">
+<!ENTITY % inlineequation.content
+                "(alt?, (inlinegraphic+|inlinemediaobject+|mml:math))">
+<!ENTITY % mathml PUBLIC "-//W3C//DTD MathML 2.0//EN" "../../MathML/mathml2.dtd">
+%mathml;

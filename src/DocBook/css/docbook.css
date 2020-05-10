@@ -1,0 +1,68 @@
+* {
+	font-family:Arial, Helvetica;
+	font-size:100%;
+  }
+h1{
+  	  font-size:16px;
+  	  
+  }
+
+h1,h2,h3,h4,h5,h6{
+	color:blue;
+}  
+
+.strike{
+	text-decoration: line-through;
+}
+  
+html{
+	background-color:#eeeeee;
+}
+body {
+	width: 800px;
+	margin: auto;
+	padding:1em;
+}
+
+#header {
+	border: 0px solid #cccccc;
+	background-image: url('http://www.hm-dmt.de/images/hund_or-k.gif');
+	background-repeat: no-repeat;
+	background-position: right;
+	/*height:200px;*/
+	text-align: center;
+	height:95px;
+}
+
+div.section {
+  max-width: 40em;
+  margin-left: 1.2em;
+}
+
+.literallayout{
+	border: 1px solid #cccccc;
+	background-color:#DEEEEE;
+	padding: 3px;
+}
+.literallayout p{
+	margin:3px;
+}
+
+.programlisting{
+	background-color:#EEEEEE;
+	border: 1px solid #cccccc;
+	margin: 10px 14px;
+	padding: 3px;
+}
+.code{
+}
+
+div.bibliomixed span{
+	display:block;
+}
+span.title{
+	font-weight:bold;
+}
+div.biblioentry {
+    border-bottom: green 1px dotted;
+}
