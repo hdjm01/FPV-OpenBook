@@ -56,13 +56,29 @@
    </info>
    
 	<preface>
-   		
    		<info>
    	  		<title>Einleitung</title>
    		</info>      
+		<section>
+			<title>Von der technischen Seite gesehen</title>
+			<para>
+				Dieses Dokument oder Projekt, je nach dem wie man es betrachtet, 
+				ist aus technischen, nicht Inhaltlichen Gründen angelgt worden.
+			</para>
+			<para>
+				Mit der Realisation dieses Dokuments werden diese Vorgänge abgeschlossen und noch mal verfeinert.
+			</para>
       	<para>
-      		...
+				So lässt sich dieses Projekt gut als Vorlage für ähnliche Projekte nutzen.
+			</para>      	
+		</section> 
+		<section>
+			<title>Von der Inhaltlichen Seite gesehen..</title>
+			<para>... ist erst mal nix da und ich erlaube mir einfach meinen gesammelten Kram hier abzukippen.
+				Mal schauen was das gibt.
 	    </para>
+		</section>
+
       	
 	</preface>
     
