@@ -1,21 +1,15 @@
 # FPV OpenBook
 
-## Build
-Using Ant build script
+ A Docbook based Open Book for FPV Racer.
 
- ```
- ant build
- ```
+ This project was started to try some tec stuff.
 
-## SRC
+ ## Read online
 
- Using Docbook file format
+ - Build and Deploy?
 
-## Installation
- 
- ```
- apt get install ant
- git clone https://github.com/hdjm01/FPV-OpenBook
- cd FPV-OpenBook
- ant installation
-```
+ ## Project Links
+
+* [Wiki](https://github.com/hdjm01/FPV-OpenBook/wiki)
+* [Issues](https://github.com/hdjm01/FPV-OpenBook/issues)
+
