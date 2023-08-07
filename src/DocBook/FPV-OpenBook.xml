@@ -82,6 +82,25 @@
       	
 	</preface>
     
+<part xml:id="Comunity" status="draft">
+	<title xml:lang="de">Gemeinschaft</title>
+    <subtitle>Die Szene</subtitle>
+    <preface>
+      <title>Vorwort</title>
+      <para>
+        ...
+      </para>
+    </preface>
+    <chapter xml:id="KommerzCom">
+      <title>Der Kommerzielle Teil der Gemeinschaft</title>
+		<para>..</para>
+	</chapter>
+	<chapter xml:id="NonCom">
+		<title>Veriene &amp; Co.</title>
+		  <para>...</para>
+	  </chapter>
+</part>
+    
     <article>
     	<title></title>
     	<para></para>
