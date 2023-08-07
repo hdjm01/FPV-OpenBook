@@ -55,19 +55,1091 @@
 		</revhistory>
    </info>
    
-	<preface>
-   		
+	<preface>   		
    		<info>
    	  		<title>Einleitung</title>
-   		</info>      
-      	<para>
-      		...
-	    </para>
+   		</info>
+		<section>
+			<title>Von der technischen Seite gesehen</title>
+			<para>
+				Dieses Dokument oder Projekt, je nach dem wie man es betrachtet, 
+				ist aus technischen, nicht Inhaltlichen Gründen angelgt worden.
+			</para>
+			<para>
+				Mit der Realisation dieses Dokuments werden diese Vorgänge abgeschlossen und noch mal verfeinert.
+			</para>
+			<para>
+				So lässt sich dieses Projekt gut als Vorlage für ähnliche Projekte nutzen.
+			</para>      	
+		</section> 
+		<section>
+			<title>Von der Inhaltlichen Seite gesehen..</title>
+			<para>... ist erst mal nix da und ich erlaube mir einfach meinen gesammelten Kram hier abzukippen.
+				Mal schauen was das gibt.
+			</para>
+		</section>
+
       	
 	</preface>
     
+<part xml:id="Comunity" status="draft">
+	<title xml:lang="de">Gemeinschaft</title>
+    <subtitle>Die Szene</subtitle>
+    <preface>
+      <title>Vorwort</title>
+      <para>
+        ...
+      </para>
+    </preface>
+    <chapter xml:id="KommerzCom">
+      <title>Der Kommerzielle Teil der Gemeinschaft</title>
+		<para>..</para>
+	</chapter>
+	<chapter xml:id="NonCom">
+		<title>Veriene &amp; Co.</title>
+		  <para>...</para>
+	  </chapter>
+</part>
+
     <article>
     	<title></title>
     	<para></para>
     </article>
+
+
+	<glossary xml:id="Glossar"
+    xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" status="InDevelopment"
+    version="5.0" xml:lang="de" revision="v1.0">
+
+    <note>
+      <title>Anmerkungen</title>
+      <para>Die Unterteilung des Glossar macht es unbenutzbar.</para>
+      <para>Ein seperates Projekt für das Glossar?</para>
+      <para>
+        <orderedlist>
+          <listitem>
+            <para>
+              <link
+                xlink:href="https://fjp.at/projects/fpv/glossar">
+                fjp.at
+              </link>
+            </para>
+          </listitem>
+          <listitem>
+            <para>
+              <link
+                xlink:href="https://www.kopter-profi.de/ratgeber/drohnen-glossar/">
+                www.kopter-profi.de
+              </link>
+            </para>
+          </listitem>
+          <listitem>
+            <para>
+              <link
+                xlink:href="https://blog.seidel-philipp.de/fpv-glossar/">
+                blog.seidel-philipp.de
+              </link>
+            </para>
+          </listitem>
+          <listitem>
+            <para>
+              <link
+                xlink:href="https://www.drone-zone.de/wissen-die-wichtigsten-drohnen-begriffe-und-abkuerzungen/">
+                www.drone-zone.de
+              </link>
+            </para>
+          </listitem>
+        </orderedlist>
+      </para>
+    </note>
+
+    <glossdiv xml:id="UsortedGloss">
+      <title>Unsortiert</title>
+
+      <glossentry xml:id="BLHeli_32">
+        <glossterm>BLHeli_32</glossterm>
+        <glossdef>
+          <simplelist type="vert">
+            <member>3. Generation BLHeli FW</member>
+            <member>closed source</member>
+            <member>Programmierbare PWM Frequenz bis zu 48kHz</member>
+          </simplelist>
+        </glossdef>
+      </glossentry>
+
+      <glossentry xml:id="RTF">
+        <glossterm xml:lang="en">RTF</glossterm>
+        <glossdef>
+          <para>Ready To Fly.</para>
+          <para>So beuzeichnet man Modelle, die man nicht zusammenbauen
+            muss.
+          </para>
+        </glossdef>
+      </glossentry>
+
+      <glossentry xml:id="FOV">
+        <glossterm>FOV</glossterm>
+        <glossdef>
+          <para>Field Of View / Sichtfeld</para>
+        </glossdef>
+      </glossentry>
+
+      <glossentry xml:id="Docbook">
+        <glossterm>Docbook</glossterm>
+        <glossdef>
+          <para>Ein XML Format für Dokumentationen.</para>
+        </glossdef>
+      </glossentry>
+
+      <glossentry xml:id="Pitmode">
+        <glossterm>Pitmode</glossterm>
+        <glossdef>
+          <bibliolist>
+            <biblioentry xml:id="BF_issues_5227">
+              <title>Smart Audio Pitmode on/off question</title>
+              <bibliosource>
+                <link
+                  xlink:href="https://github.com/betaflight/betaflight/issues/5227">332 2,248 1,084 betaflight/betaflight
+                </link>
+              </bibliosource>
+            </biblioentry>
+          </bibliolist>
+        </glossdef>
+      </glossentry>
+
+      <glossentry xml:id="FPV">
+        <glossterm>FPV</glossterm>
+        <glossdef>
+          <para>Firt Person View</para>
+        </glossdef>
+      </glossentry>
+
+      <glossentry xml:id="LUA">
+        <glossterm>LUA</glossterm>
+        <glossdef
+          xlink:href="https://de.wikipedia.org/wiki/Lua">
+          <para>Lua (portugiesisch für Mond) ist eine imperative und
+            erweiterbare Skriptsprache zum Einbinden in Programme, um
+            diese
+            leichter weiterentwickeln und warten zu können. Eine der
+            besonderen Eigenschaften von Lua ist die geringe Größe des
+            kompilierten Skript-Interpreters.
+          </para>
+        </glossdef>
+      </glossentry>
+
+      <glossentry xml:id="Gloss4in1">
+        <glossterm>4in1</glossterm>
+        <glossdef>
+          <para>
+            <xref linkend="ESC" />
+            auf einer Platine.
+          </para>
+        </glossdef>
+      </glossentry>
+      <glossentry xml:id="PocketCharger">
+        <glossterm>Pocket Charger</glossterm>
+        <glossdef>
+          <para>
+            Siehe
+            <xref linkend="Feldlader" />
+          </para>
+        </glossdef>
+      </glossentry>
+
+      <glossentry xml:id="MCU">
+        <glossterm>MCU</glossterm>
+        <glossdef>
+          <para>???</para>
+        </glossdef>
+      </glossentry>
+
+      <glossentry>
+        <glossterm>KISS</glossterm>
+        <glossdef>
+          <para>Regler von Flyduino</para>
+        </glossdef>
+      </glossentry>
+
+
+      <glossentry xml:id="BEC">
+        <glossterm>BEC</glossterm>
+        <indexterm>
+          <primary>PEC</primary>
+        </indexterm>
+        <glossdef>
+          <para>???</para>
+        </glossdef>
+      </glossentry>
+      <glossentry>
+        <glossterm>Max Burst</glossterm>
+        <glossdef>
+          <para>
+            <link
+              xlink:href="http://www.fpv-racing.info/fpv-racer/regler-escs/esc-regler/">fpv-racing.info</link>
+          </para>
+        </glossdef>
+      </glossentry>
+
+      <glossentry xml:id="FCG">
+        <glossterm>Flight Controler</glossterm>
+        <abbrev>FC</abbrev>
+        <indexterm>
+          <primary>FC</primary>
+        </indexterm>
+        <glossdef>
+          <para>...</para>
+        </glossdef>
+      </glossentry>
+      <glossentry xml:id="Fernbedienung">
+        <glossterm>RC</glossterm>
+        <indexterm>
+          <primary>RC</primary>
+        </indexterm>
+        <glossdef>
+          <para>Remote Control</para>
+          <para>Fernbedienung</para>
+        </glossdef>
+      </glossentry>
+
+      <glossentry xml:id="RPM">
+        <glossterm>Routes Per Minute</glossterm>
+        <abbrev>RPM</abbrev>
+        <glossdef>
+          <para>Drehzahl pro Minute</para>
+        </glossdef>
+      </glossentry>
+      <glossentry xml:id="PWM">
+        <glossterm>PWM</glossterm>
+        <glossdef>
+          <para>Pulse Wide Modulation</para>
+        </glossdef>
+      </glossentry>
+      <glossentry xml:id="at">
+        <glossterm>Auto Timing</glossterm>
+        <glossdef>
+          <para>?</para>
+        </glossdef>
+      </glossentry>
+      <glossentry xml:id="VBat">
+        <glossterm>VBat</glossterm>
+        <glossdef>
+          <para>Spannung der Batterie</para>
+        </glossdef>
+      </glossentry>
+      <glossentry xml:id="Passthrough">
+        <glossterm>Passthrough</glossterm>
+        <glossdef>
+          <para>
+            Durch etwas hindurch
+          </para>
+        </glossdef>
+      </glossentry>
+      <glossentry>
+        <glossterm>Diversity</glossterm>
+        <glossdef>
+          <para>?</para>
+        </glossdef>
+      </glossentry>
+      <glossentry>
+        <glossterm>PIT mode</glossterm>
+        <glossdef>
+          <para>?</para>
+        </glossdef>
+      </glossentry>
+      <glossentry>
+        <glossterm>Damped Light</glossterm>
+        <glossdef>
+          <para>aktive Bremse des Propellers</para>
+        </glossdef>
+      </glossentry>
+
+      <glossentry>
+        <glossterm>BLHeli</glossterm>
+        <glossdef>
+          <para>?</para>
+        </glossdef>
+      </glossentry>
+
+      <glossentry>
+        <glossterm>Race mode</glossterm>
+        <glossdef>
+          <para>?</para>
+        </glossdef>
+      </glossentry>
+      <glossentry>
+        <glossterm>FrSky</glossterm>
+        <glossdef>
+          <para>
+            Siehe
+            <xref linkend="FrSky" />
+          </para>
+        </glossdef>
+      </glossentry>
+      <glossentry>
+        <glossterm>SPI</glossterm>
+
+        <glossdef>
+          <para>? Programming Interface</para>
+        </glossdef>
+      </glossentry>
+
+      <glossentry>
+        <glossterm>VCP</glossterm>
+        <glossdef>
+          <para>???</para>
+        </glossdef>
+      </glossentry>
+
+      <glossentry>
+        <glossterm>Blackbox</glossterm>
+        <glossdef>
+          <para>
+            Daten-Aufzeichnung des
+            <xref linkend="FC" />
+          </para>
+        </glossdef>
+      </glossentry>
+      <glossentry xml:id="PPM">
+        <glossterm>PPM</glossterm>
+        <glossdef>
+          <para>???</para>
+        </glossdef>
+      </glossentry>
+      <glossentry xml:id="IMU">
+        <glossterm>IMU</glossterm>
+        <glossdef>
+          <para />
+        </glossdef>
+      </glossentry>
+      <glossentry>
+        <glossterm>Transponder</glossterm>
+        <glossdef>
+          <para />
+        </glossdef>
+      </glossentry>
+      <glossentry xml:id="PIDBegriff">
+        <glossterm>PID</glossterm>
+        <glossdef>
+          <para>
+            Siehe
+            <link
+              xlink:href="https://de.wikipedia.org/wiki/Regler#PID-Regler">Wikipedia</link>
+            , oder
+            <xref linkend="PID1" />
+          </para>
+        </glossdef>
+      </glossentry>
+      <glossentry>
+        <glossterm>Beeper</glossterm>
+        <glossdef>
+          <para>Akustischer Signalgeber</para>
+        </glossdef>
+      </glossentry>
+      <glossentry>
+        <glossterm>Airbot Hersteller</glossterm>
+        <glossdef>
+          <para />
+        </glossdef>
+      </glossentry>
+      <glossentry xml:id="OSD">
+        <glossterm>OSD</glossterm>
+        <abbrev></abbrev>
+        <glossdef>
+          <para>On Screen Display</para>
+        </glossdef>
+      </glossentry>
+      <glossentry xml:id="QuadDef" xml:lang="DE-de">
+        <glossterm>Quad</glossterm>
+        <glossdef>
+          <para>Bezeichnung für einen Multicopter mit vier Motoren.
+          </para>
+        </glossdef>
+      </glossentry>
+      <glossentry>
+        <glossterm>MCU</glossterm>
+        <glossdef>
+          <para>???</para>
+        </glossdef>
+      </glossentry>
+      <glossentry>
+        <glossterm>Universal Asynchronous Receiver Transmitter
+        </glossterm>
+        <abbrev>UART</abbrev>
+        <glossdef>
+          <para>
+            Elektronische Schaltung diezur Herstellung digitaler
+            serieller
+            Verbindungen. Siehe
+            <biblioref linkend="UART" />
+          </para>
+        </glossdef>
+      </glossentry>
+
+      <glossentry>
+        <glossterm>MPU6000</glossterm>
+        <glossdef>
+          <para>???</para>
+        </glossdef>
+      </glossentry>
+
+      <glossentry>
+        <glossterm>servo rail</glossterm>
+        <glossdef>
+          <para />
+        </glossdef>
+      </glossentry>
+
+      <glossentry>
+        <glossterm>Tramp Telemetry</glossterm>
+        <glossdef>
+          <para>Von ImmersionRC</para>
+        </glossdef>
+      </glossentry>
+
+      <glossentry xml:id="DMA">
+        <glossterm>Direct Memory Access</glossterm>
+        <abbrev>DMA</abbrev>
+        <glossdef>
+          <para>???</para>
+        </glossdef>
+      </glossentry>
+
+      <glossentry>
+        <glossterm>MWOSD</glossterm>
+        <abbrev>MWOSD</abbrev>
+        <glossdef>
+          <para />
+        </glossdef>
+      </glossentry>
+
+      <glossentry>
+        <glossterm>TBS</glossterm>
+        <glossdef>
+          <para />
+        </glossdef>
+      </glossentry>
+
+      <glossentry>
+        <glossterm>F7</glossterm>
+        <glossdef>
+          <para />
+        </glossdef>
+      </glossentry>
+
+      <glossentry>
+        <glossterm>SITL</glossterm>
+        <glossdef>
+          <para />
+        </glossdef>
+      </glossentry>
+
+      <glossentry>
+
+        <glossterm>STM32F1</glossterm>
+
+        <glossdef>
+
+          <para>Ein Microprozessor</para>
+          <para>
+            Siehe auch
+            <biblioref linkend="STM32F1_MouserEInk" />
+            oder
+            <biblioref linkend="STM32Wikipedia" />
+          </para>
+        </glossdef>
+      </glossentry>
+
+      <glossentry xml:id="GPS">
+        <glossterm>Global Positioning System</glossterm>
+        <abbrev>GPS</abbrev>
+        <glossdef>
+          <para />
+        </glossdef>
+      </glossentry>
+      <glossentry>
+        <glossterm>Central Processor Unit</glossterm>
+        <abbrev>CPU</abbrev>
+        <glossdef>
+          <para />
+        </glossdef>
+      </glossentry>
+      <glossentry>
+        <glossterm>CLI</glossterm>
+        <glossdef>
+          <para>Command Line Interface</para>
+        </glossdef>
+      </glossentry>
+
+      <glossentry>
+        <glossterm>Propwasch</glossterm>
+        <glossdef>
+          <para></para>
+        </glossdef>
+      </glossentry>
+
+      <glossentry xml:id="Filter">
+        <glossterm>Filter</glossterm>
+        <glossdef>
+          <para>Bereinigung von Störungen aus Datenstömen.</para>
+          <para>
+            Die
+            <xref linkend="FC" />
+            verwenden Filter auf die Daten der Sensoren.
+          </para>
+        </glossdef>
+      </glossentry>
+
+      <glossentry xml:id="DynFilter">
+        <glossterm>Dynamische Filter</glossterm>
+        <glossdef>
+          <para>Kann in Betaflight ab V2.2 konfiguriert werden.</para>
+          <bibliolist>
+            <title>Videos</title>
+            <bibliomixed xml:id="BF32DynFilter1" />
+          </bibliolist>
+        </glossdef>
+      </glossentry>
+
+      <glossentry xml:id="NotchFilter">
+        <glossterm>Notch Filter</glossterm>
+        <glossdef>
+          <para>Kann in Betaflight konfiguriert werden.</para>
+        </glossdef>
+      </glossentry>
+
+      <glossentry xml:id="RC-Profil">
+        <glossterm>RC-Profile</glossterm>
+        <glossdef>
+          <para>
+            ...
+          </para>
+        </glossdef>
+      </glossentry>
+
+      <glossentry xml:id="F3-EVO">
+        <glossterm>F3 EVO</glossterm>
+        <glossdef>
+          <para>
+            Flight Controller...
+          </para>
+        </glossdef>
+      </glossentry>
+
+      <glossentry xml:id="XSLT">
+        <glossterm>XSLT</glossterm>
+        <glossdef>
+          <para>
+            Extensible Stylesheet Language Transformation
+          </para>
+        </glossdef>
+      </glossentry>
+
+      <glossentry xml:id="Crossfire">
+        <glossterm>Crossfire</glossterm>
+        <glossdef>
+          <para>
+            ...
+          </para>
+        </glossdef>
+      </glossentry>
+      <glossentry xml:id="HD">
+        <glossterm>HD</glossterm>
+        <glossdef>
+          <para>
+            High Definition
+          </para>
+        </glossdef>
+      </glossentry>
+      <glossentry xml:id="SKU">
+        <glossterm>SKU</glossterm>
+        <!-- <glosssee>???</glosssee> -->
+        <glossdef>
+          <para>???</para>
+        </glossdef>
+      </glossentry>
+
+      <glossentry xml:id="Telemetrie">
+        <glossterm>Telemetrie</glossterm>
+        <glossdef>
+          <para>
+            Übertragung von Mess und Steuerdaten.
+          </para>
+        </glossdef>
+      </glossentry>
+      <glossentry xml:id="MultiWii">
+        <glossterm>MultiWii</glossterm>
+        <glossdef>
+          <para>Wird in den Logfiles als API mit Version aufgeführt.
+          </para>
+          <para>
+            <citation>
+              MultiWii is a general purpose free open source project to
+              control
+              flying RC models.<!-- <biblioref linkend="MutiWiiWikiMain"/> -->
+            </citation>
+          </para>
+          <!--<bibliolist> <bibliomixed /> <bibliomixed xml:id="MutiWiiWikiMain"/>
+            <bibliomixed xml:id="MutiWiiWikiMutiWii"/> </bibliolist> -->
+        </glossdef>
+      </glossentry>
+      <glossentry xml:id="KV">
+        <glossterm>KV</glossterm>
+        <glossdef>
+          <para>Angabe bei den Motoren. Dafür gibt es auch eine
+            Definition:
+            Umdrehungen pro Minute der Motor pro Volt
+          </para>
+        </glossdef>
+      </glossentry>
+
+      <glossentry xml:id="Zadig">
+        <glossterm>Zadig</glossterm>
+        <glossdef>
+          <para>Eine Software für USB Treiber</para>
+          <para>Was da genau gemacht wird, habe ich noch nicht
+            geschnallt.
+          </para>
+        </glossdef>
+      </glossentry>
+
+    </glossdiv>
+
+    <glossdiv xml:id="Moves">
+      <title>Manöver / Tricks</title>
+      <glossentry>
+        <glossterm>Powerloop</glossterm>
+        <glossdef>
+          <para></para>
+        </glossdef>
+      </glossentry>
+      <glossentry>
+        <glossterm>Flip</glossterm>
+        <glossdef>
+          <para></para>
+        </glossdef>
+      </glossentry>
+      <glossentry>
+        <glossterm>Roll</glossterm>
+        <glossdef>
+          <para></para>
+        </glossdef>
+      </glossentry>
+    </glossdiv>
+    <glossdiv xml:id="Sensoren">
+      <title>Sensoren</title>
+      <glossentry>
+        <glossterm>BARO</glossterm>
+        <glossdef>
+          <para>Barometer</para>
+        </glossdef>
+      </glossentry>
+      <glossentry xml:id="CurrenSensor">
+        <glossterm>Current Sensor</glossterm>
+        <glossdef>
+          <para>Strom Sensor</para>
+        </glossdef>
+      </glossentry>
+    </glossdiv>
+    <glossdiv xml:id="Steuerung">
+      <title>Steuerung</title>
+      <glossentry xml:id="Arm" xml:lang="de">
+        <glossterm>ARM</glossterm>
+        <glossdef>
+          <para>Aktivierung der Motoren</para>
+        </glossdef>
+      </glossentry>
+      <glossentry xml:id="Throttle">
+        <glossterm>Throttle</glossterm>
+        <indexterm>
+          <primary>Throttle</primary>
+        </indexterm>
+        <glossdef>
+          <para>Gas, Höhe. Alle Motoren werden beschleunigt oder
+            verlangsamt,
+          </para>
+        </glossdef>
+      </glossentry>
+      <glossentry xml:id="Roll">
+        <glossterm>Roll</glossterm>
+        <indexterm>
+          <primary>Roll</primary>
+        </indexterm>
+        <glossdef>
+          <para>Seitlich kippen</para>
+        </glossdef>
+      </glossentry>
+      <glossentry>
+        <glossterm>Pitch</glossterm>
+        <glossdef>
+          <para>Nach vorne oder hinten kippen</para>
+        </glossdef>
+      </glossentry>
+      <glossentry>
+        <glossterm>Yaw</glossterm>
+        <glossdef>
+          <para>Drehen, links rechts</para>
+        </glossdef>
+      </glossentry>
+      <glossentry>
+        <glossterm>Aileron</glossterm>
+        <glossdef>
+          <para>
+            Wie Roll. Seitwärts gleiten im
+            <xref linkend="Hover" />
+            :
+          </para>
+        </glossdef>
+      </glossentry>
+      <glossentry>
+        <glossterm>Elevator</glossterm>
+        <glossdef>
+          <para></para>
+        </glossdef>
+      </glossentry>
+      <glossentry>
+        <glossterm>Flaps</glossterm>
+        <glossdef>
+          <para></para>
+        </glossdef>
+      </glossentry>
+      <glossentry>
+        <glossterm>Rudder</glossterm>
+        <glossdef>
+          <para></para>
+        </glossdef>
+      </glossentry>
+    </glossdiv>
+    <glossdiv xml:id="Flugmodi">
+      <title>Flugmodi</title>
+      <glossentry xml:id="Acro">
+        <glossterm>Acro</glossterm>
+        <glossdef>
+          <para>Flugmodus in dem der Copter die Stellung einnimmt, in
+            dem der
+            Pilot ihn steuert.
+            Ein selbständige Rückkehr in die Horizontale wird nicht durchgeführt.
+          </para>
+        </glossdef>
+      </glossentry>
+      <glossentry xml:id="Hover">
+        <glossterm>Hovermode</glossterm>
+        <glossdef>
+          <para>
+            Flugmodus in dem der Copter bei Mittelstellung von Pitch
+            und Roll, selbständig in die Horizontale zurückkehrt.
+          </para>
+        </glossdef>
+      </glossentry>
+      <glossentry>
+        <glossterm>
+          Airmode
+          <indexterm>
+            <primary>Airmode</primary>
+          </indexterm>
+        </glossterm>
+        <glossdef>
+          <para>
+            Unklar und vermutlich nicht unproblematisch.
+            <remark>Das ist überholt.</remark>
+          </para>
+        </glossdef>
+      </glossentry>
+
+    </glossdiv>
+    <glossdiv xml:id="ProtokolleG">
+      <title>Protokolle</title>
+      <glossentry xml:id="SBUS">
+        <glossterm>SBUS</glossterm>
+        <glossdef>
+          <para>
+            Siehe auch
+            <xref linkend="UNINVERTEDSBUSANDSMARTPORTONFRSKY" />
+          </para>
+        </glossdef>
+      </glossentry>
+      <glossentry xml:id="SmartPortGlossar">
+        <glossterm>Smart Port</glossterm>
+        <glossdef>
+          <para>Hersteller FrSky</para>
+          <para>
+            Siehe auch <!-- TODO xref linkend="UNINVERTEDSBUSANDSMARTPORTONFRSKY"/ -->
+          </para>
+        </glossdef>
+      </glossentry>
+      <glossentry xml:id="USART" xlink:title="USART">
+        <glossterm>Universal Synchronous/Asynchronous Receiver
+          Transmitter
+        </glossterm>
+        <abbrev>USART</abbrev>
+        <glossdef>
+          <para>
+            Siehe
+            <biblioref linkend="UART2" />
+            und
+            <biblioref linkend="UART3" />
+          </para>
+        </glossdef>
+      </glossentry>
+      <glossentry>
+        <glossterm>Smart Audio</glossterm>
+        <glossdef>
+          <para>Von TBS</para>
+
+        </glossdef>
+      </glossentry>
+      <glossentry>
+        <glossterm>Oneshot125</glossterm>
+        <glossdef>
+          <para />
+        </glossdef>
+      </glossentry>
+      <glossentry>
+        <glossterm>Oneshot42</glossterm>
+        <glossdef>
+          <para />
+        </glossdef>
+      </glossentry>
+      <glossentry>
+        <glossterm>Multishot</glossterm>
+        <glossdef>
+          <para>???</para>
+        </glossdef>
+      </glossentry>
+      <glossentry>
+        <glossterm>Proshot1000</glossterm>
+        <glossdef>
+          <para />
+        </glossdef>
+      </glossentry>
+      <glossentry>
+        <glossterm>DShot300</glossterm>
+        <glossdef>
+          <para>
+            <xref linkend="DShot" />
+          </para>
+        </glossdef>
+      </glossentry>
+      <glossentry>
+        <glossterm>DShot600</glossterm>
+        <glossdef>
+          <para>
+            <xref linkend="DShot" />
+          </para>
+        </glossdef>
+      </glossentry>
+      <glossentry>
+        <glossterm>Dshot1200</glossterm>
+        <glossdef>
+          <para>
+            <xref linkend="DShot" />
+          </para>
+        </glossdef>
+      </glossentry>
+    </glossdiv>
+    <glossdiv xml:id="Datenformate">
+      <title>Datenformate</title>
+      <glossentry xml:id="HTML">
+        <glossterm>HTML</glossterm>
+        <glossdef>
+          <para>
+            Hypertext Markup Language
+          </para>
+        </glossdef>
+      </glossentry>
+
+      <glossentry xml:id="PDF">
+        <glossterm>PDF</glossterm>
+        <glossdef>
+          <para>
+            Portable Document Format
+          </para>
+        </glossdef>
+      </glossentry>
+    </glossdiv>
+
+    <glossdiv xml:id="Video">
+      <title>Video</title>
+      <bibliolist>
+        <title>Videos</title>
+        <bibliomixed xml:id="NTSCandPAL" />
+      </bibliolist>
+      <glossentry xml:id="PAL">
+        <glossterm>PAL</glossterm>
+        <glossdef>
+          <para>Phase alternation by Line</para>
+          <para>Das europäschie Video Format mit 25 Bildern/Sekunde.
+          </para>
+          <para>
+            Siehe auch
+            <xref linkend="NTSC" />
+          </para>
+          <para>625 Linien</para>
+        </glossdef>
+      </glossentry>
+      <glossentry xml:id="NTSC">
+        <glossterm>NTSC</glossterm>
+        <glossdef>
+          <para>Amerikanisches Video Format</para>
+          <para>Wird auch in Japan verwendet.</para>
+          <para>30 Bilder/Sekunde.</para>
+          <para>525 Linien</para>
+        </glossdef>
+      </glossentry>
+      <glossentry>
+        <glossterm>VTX</glossterm>
+        <abbrev>VTX</abbrev>
+        <indexterm>
+          <primary>VTX</primary>
+        </indexterm>
+        <glossdef>
+          <para>Videosender</para>
+        </glossdef>
+      </glossentry>
+      <glossentry xml:id="VTXSA">
+        <glossterm>VTX SA</glossterm>
+        <glossdef>
+          <para>Siehe Smart Audio</para>
+        </glossdef>
+      </glossentry>
+      <glossentry>
+        <glossterm>VTX TR</glossterm>
+        <glossdef>
+          <para>Tramp</para>
+        </glossdef>
+      </glossentry>
+      <glossentry xml:id="TVL">
+        <glossterm>TV-Linien</glossterm>
+        <abbrev>TVL</abbrev>
+        <glossdef>
+          <para>
+            Anzal horizontaler Linien bei einem Analogen Bild.
+          </para>
+        </glossdef>
+      </glossentry>
+    </glossdiv>
+    <glossdiv xml:id="TreiberGlossDiv">
+      <title>Treiber</title>
+      <glossentry>
+        <glossterm>CP210x</glossterm>
+        <glossdef>
+          <para></para>
+        </glossdef>
+      </glossentry>
+      <glossentry>
+        <glossterm>STM USB VCP</glossterm>
+        <glossdef>
+          <para></para>
+        </glossdef>
+      </glossentry>
+    </glossdiv>
+    <glossdiv xml:id="SoftwareGloss">
+      <title>Software</title>
+      <glossentry xml:id="OpenTX">
+        <glossterm>OpenTX</glossterm>
+
+        <glossdef>
+          <para>
+            Sie auch
+            <biblioref linkend="TOTM" />
+          </para>
+          <para>
+            <link xlink:href="http://www.open-tx.org">www.open-tx.org</link>
+          </para>
+          <bibliolist>
+            <!-- <bibliomixed xml:id="TaranisLua1"/> -->
+            <bibliomixed xml:id="OpenTXMan" />
+            <bibliomixed xml:id="OpenTXMan22" />
+            <bibliomixed xml:id="LuainOpenTX" />
+          </bibliolist>
+        </glossdef>
+      </glossentry>
+      <glossentry xml:id="ant">
+        <glossterm>Ant</glossterm>
+        <glossdef>
+          <para>Apache Build Tool</para>
+        </glossdef>
+      </glossentry>
+      <glossentry xml:id="BetaflightT">
+        <glossterm>Betaflight</glossterm>
+        <glossdef>
+          <para>
+            Firmaware für
+            <xref linkend="FC" />
+            's
+          </para>
+        </glossdef>
+      </glossentry>
+      <glossentry xml:id="Firmware">
+        <glossterm>Firmware</glossterm>
+        <glossdef>
+          <para>Auf Hardware aufgespielte Software, die den spezifischen
+            Betrieb der Hardware ermöglicht.
+          </para>
+        </glossdef>
+      </glossentry>
+    </glossdiv>
+    <glossdiv xml:id="HardwareGlossar">
+      <title>Hardware</title>
+      <glossentry xml:id="CCD">
+        <glossterm>CCD</glossterm>
+        <glossdef>
+          <para>
+            Chraged Coupled Device
+            <footnote>
+              <para>
+                <link
+                  xlink:href="https://de.wikipedia.org/wiki/CCD-Sensor">Wikipedia</link>
+              </para>
+            </footnote>
+          </para>
+        </glossdef>
+      </glossentry>
+      <glossentry xml:id="CMOS">
+        <glossterm>CMOS</glossterm>
+        <glossdef>
+          <para>
+            <citation
+              xlink:href="https://de.wikipedia.org/wiki/Complementary_metal-oxide-semiconductor">Complementary metal-oxide-semiconductor
+            </citation>
+          </para>
+        </glossdef>
+      </glossentry>
+      <glossentry xml:id="ESC">
+        <glossterm>ESC</glossterm>
+        <indexterm>
+          <primary>ESC</primary>
+        </indexterm>
+        <indexterm>
+          <primary>Fahrtregler</primary>
+          <secondary>ESC</secondary>
+        </indexterm>
+        <glossdef>
+          <para xml:lang="de">Fahrtregler</para>
+        </glossdef>
+      </glossentry>
+      <glossentry xml:id="DRL">
+        <glossterm>DRL</glossterm>
+        <glossdef>
+          <para>Drone racing League</para>
+        </glossdef>
+      </glossentry>
+      <glossentry>
+        <glossterm>Gyroskope</glossterm>
+        <abbrev>Gyro</abbrev>
+        <glossdef>
+          <para>Sensor zur Erkennung der Lage</para>
+        </glossdef>
+      </glossentry>
+      <glossentry>
+        <glossterm>Power Distribution Board</glossterm>
+        <abbrev>PDB</abbrev>
+        <glossdef>
+          <para>Eine extra Platine für die Stromverteilung</para>
+        </glossdef>
+      </glossentry>
+    </glossdiv>
+  </glossary>
+
 </book>
