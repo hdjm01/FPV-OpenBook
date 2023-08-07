@@ -8,11 +8,8 @@
 	exclude-result-prefixes="db ng exsl"
 	version="1.0">
 	
-  	<xsl:import href="file:///S:/Docbook/xsl/custom/chunk.xsl"/>
-  	<!-- <xsl:import href="../profile.xsl"/> -->
-  	<!--xsl:import href="file:///S:/Docbook/xsl/custom/html/div.xsl"/  -->
-  	<!--xsl:import href="file:///S:/Docbook/xsl/custom/html/user.header.navigation.xsl"/-->
-  	
+	<xsl:import href="docbook-xsl/html/chunk.xsl"/>
+  	  	
   	<xsl:param name="use.extensions">0</xsl:param>
   	<xsl:param name="tablecolumns.extension">0</xsl:param>
   	<xsl:param name="linenumbering.extension" select="1"></xsl:param>

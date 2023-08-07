@@ -1,0 +1,42 @@
+name: Build
+
+# make sure, the commit can be build
+
+on:
+  
+  pull_request:
+    branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  
+  build:
+  
+    runs-on: ubuntu-latest
+
+    steps:
+      
+      - uses: actions/checkout@v2
+
+      - name: Update
+        run: sudo apt-get update
+
+      - name: Install xalan
+        run: sudo apt-get install -y xalan
+
+      - name: Install fop
+        run: sudo apt-get install -y fop
+
+      - name: build
+        run: ant init
+
+      - name: build
+        run: ant build
+
+      - name: Archive results
+        uses: actions/upload-artifact@v3.1.1
+        with:
+          name: FPV-Bibliography
+          path: build

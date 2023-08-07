@@ -8,9 +8,7 @@
 	exclude-result-prefixes="db ng exsl"
 	version="1.0">
 	
-  	<xsl:import href="file:///S:/Docbook/xsl/custom/html.xsl"/>
-  	<xsl:import href="../Parameter.Global.xsl"/>
-  	<xsl:import href="Parameter.HTML.xsl"/>
+	<xsl:import href="docbook-xsl/html/docbook.xsl"/>
   	
   	<xsl:param name="draft.mode">No</xsl:param>
 	<xsl:param name="profile.revisionflag">1</xsl:param>

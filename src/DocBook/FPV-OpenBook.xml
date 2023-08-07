@@ -1,38 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook V5.0//EN" "dtd/docbook.dtd"[
 
-<!ELEMENT xi:include (xi:fallback?) >
-<!ATTLIST xi:include
-    xmlns:xi   CDATA       #FIXED    "http://www.w3.org/2001/XInclude"
-    href       CDATA       #IMPLIED
-    parse      (xml|text)  "xml"
-    xpointer   CDATA       #IMPLIED
-    encoding   CDATA       #IMPLIED 
-    accept     CDATA       #IMPLIED
-    accept-language CDATA  #IMPLIED >
-
-<!ELEMENT xi:fallback ANY>
-<!ATTLIST xi:fallback
-    xmlns:xi   CDATA   #FIXED   "http://www.w3.org/2001/XInclude" >
-
-<!ENTITY % local.chapter.class "| xi:include">
-<!ENTITY % local.divcomponent.mix "| xi:include">
-
-<!ENTITY % status.attrib
-	"status		(draft|published|proved|creation)	#IMPLIED"
->
-<!ENTITY % status.attrib
-	"status		(draft|published|proved|creation)	#IMPLIED"
->
-]>
-<book xmlns="http://docbook.org/ns/docbook"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      status="draft"
-      version="5.0"
-      revision="v1.0"
-      xml:lang="DE-de"
-      >
-      
+<book status="InDevelopment" 
+	version="5.0"
+	xml:lang="DE-de"
+	revision="v1.0" 
+	xmlns="http://docbook.org/ns/docbook"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xlink="http://www.w3.org/1999/xlink" 
+	xml:id="FPV-OpenBook"
+	xsi:schemaLocation="http://docbook.org/ns/docbook xsd\5.0\docbook.xsd">
+     
    <info >
       <title>FPV OpenBook</title>
       <subtitle></subtitle>

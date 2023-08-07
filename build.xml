@@ -4,10 +4,10 @@
     <record name="build.log"/>
     <!-- -->
 	<property name="Xalan" value="bin/xalan.jar" />
-    <property name="infile" value="./src/Docbook/FPV-OpenBook.xml" />
+    <property name="infile" value="./src/DocBook/FPV-OpenBook.xml" />
     <property name="outfile" value="./build/index.html" />
     <property name="pdf" value="./build/FPV-OpenBook.pdf" />
-    <property name="xsl-dir" value="./src/Docbook/xsl" />
+    <property name="xsl-dir" value="./src/DocBook/xsl" />
     <property name="fop" value="\fop-2.3\fop\fop.bat" />
     <!-- -->
 	<condition property="isWindows">
@@ -30,7 +30,7 @@
 
     <target name="copy-files" description="Copy files to build dir">
         <copy todir="./build/css/">
-            <fileset dir="./src/Docbook/css"/>
+            <fileset dir="./src/DocBook/css"/>
         </copy>
     </target>
 
