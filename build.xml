@@ -1,36 +1,150 @@
-<?xml version="1.0"?>
-<project name="FPV-OpenBook" default="build">
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="FPV OpenBook">
+	<!-- -->
+    <record name="build.log"/>
+    <!-- -->
+	<property name="Xalan" value="bin/xalan.jar" />
+    <property name="infile" value="./src/Docbook/FPV-OpenBook.xml" />
+    <property name="outfile" value="./build/index.html" />
+    <property name="pdf" value="./build/FPV-OpenBook.pdf" />
+    <property name="xsl-dir" value="./src/Docbook/xsl" />
+    <property name="fop" value="\fop-2.3\fop\fop.bat" />
+    <!-- -->
+	<condition property="isWindows">
+        <os family="windows" />
+    </condition> 
+    <condition property="isUnix">
+        <os family="unix" />
+    </condition>
+	
+	<!-- -->
 
-	<target name="init">
-		<mkdir dir="build"/>
-		<mkdir dir="build/html"/>
-		<mkdir dir="build/pdf"/>
-		<mkdir dir="build/fo"/>
-	</target>
-	
-	<target name="build" depends="init" description="Build FPV OpenBook">
-		
-	</target>
-	
-	<target name="install" description="Installing required software">
-	</target>
-	
-	<target name="html">
-	</target>
-	
-	<target name="pdf">
-	</target>
-	
-	<target name="fo">
-	</target>
-	
-	<target name="man">
-	</target>
-	
-	<target name="rtf">
-	</target>
-	
-	<target name="help">
-	</target>
-	
+    <target name="init" description="prepare">
+        <mkdir dir="./build"/>
+        <mkdir dir="./build/css"/>
+        <mkdir dir="./build/xsd"/>
+        <echo>${user.dir}</echo>
+        <echo>${user.home}</echo>
+        <echo>${basedir}</echo>
+    </target>
+
+    <target name="copy-files" description="Copy files to build dir">
+        <copy todir="./build/css/">
+            <fileset dir="./src/Docbook/css"/>
+        </copy>
+    </target>
+
+    <target name="build" description="prepare" depends="init">
+        <antcall target="html"/>
+        <antcall target="pdf"/>
+    </target>
+
+    <target name="html" description="Create single page">
+
+        <antcall target="xslt-windows">
+            <param name="xsl" value="${xsl-dir}/html.xsl"/>
+            <param name="input" value="${infile}"/>
+            <param name="output" value="${outfile}"/>
+        </antcall>
+
+        <antcall target="xslt-unix">
+            <param name="in" value="${infile}" />
+            <param name="out" value="${outfile}" />
+            <param name="xsl" value="${xsl-dir}/html.xsl" />
+        </antcall>
+
+    </target>
+
+    <target name="xslt-windows" description="Create multible HTML pages" if="isWindows">
+        <echo>Input: ${input}</echo>
+        <echo>Output: ${output}</echo>
+        <exec executable="java" dir=".">
+            <arg value="-cp" /> 
+            <arg value="bin/xercesImpl.jar" />
+            <arg value="-Djavax.xml.parsers.DocumentBuilderFactory=org.apache.xerces.jaxp.DocumentBuilderFactoryImpl" />
+            <arg value="-Djavax.xml.parsers.SAXParserFactory=org.apache.xerces.jaxp.SAXParserFactoryImpl" />
+            <arg value="-Dorg.apache.xerces.xni.parser.XMLParserConfiguration=org.apache.xerces.parsers.XIncludeParserConfiguration" />
+            <arg value="-jar" />
+            <arg value="${Xalan}" />
+            <arg value="-in" />
+            <arg value="${input}" />
+            <arg value="-xsl" />
+            <arg value="${xsl}" />
+            <arg value="-out" />
+            <arg value="${output}" />
+        </exec>
+    </target> 
+
+    <target name="xslt-unix" if="isUnix">
+        <echo>using xalan</echo>
+        <echo>${in}</echo>
+        <echo>${out}</echo>
+        <echo>${xsl}</echo>
+        <exec executable="xalan">
+            <arg value="-in" />
+            <arg value="${in}" />
+            <arg value="-xsl" />
+            <arg value="${xsl}" />
+            <arg value="-out" />
+            <arg value="${out}" />
+        </exec>
+    </target>
+
+    <target name="pdf" description="Create PDF file">
+        <antcall target="fop-unix">
+            <param name="in" value="${infile}" />
+            <param name="out" value="${pdf}" />
+            <param name="xsl" value="${xsl-dir}/fo.xsl" />
+            <param name="type" value="pdf" />
+        </antcall>
+        <antcall target="fop-windows">
+            <param name="in" value="${infile}" />
+            <param name="out" value="${pdf}" />
+            <param name="xsl" value="${xsl-dir}/fo.xsl" />
+            <param name="type" value="pdf" />
+        </antcall>
+    </target>
+
+    <target name="fop-windows" description="XSL Transformation on Windows machines" if="isWindows">
+
+        <echo>Input:  ${in}</echo>
+        <echo>Output: ${out}</echo>
+        <echo>XSL:    ${xsl}</echo>
+        <echo>Type:    ${xsl}</echo>
+
+        <echo>
+            ${fop} ${in} -xsl ${xsl} -${type} ${out}
+        </echo>
+
+        <exec executable="${fop}" failonerror="true" >
+            <arg value="-xml"/>
+            <arg value="${in}"/>
+            <arg value="-xsl"/>
+            <arg value="${xsl}"/>
+            <arg value="-${type}"/>
+            <arg value="${out}"/>
+         </exec>
+    </target>
+
+    <target name="fop-unix" description="XSL Transformation on Windows machines" if="isUnix">
+
+        <echo>Input:  ${in}</echo>
+        <echo>Output: ${out}</echo>
+        <echo>XSL:    ${xsl}</echo>
+        <echo>Type:   ${type}</echo>
+        
+        <echo>
+            ${in} -xsl ${xsl} -${type} ${out}
+        </echo>
+            
+        <exec executable="fop" failonerror="true" >
+            <arg value="-xml"/>
+            <arg value="${in}"/>
+            <arg value="-xsl"/>
+             <arg value="${xsl}"/>
+            <arg value="-${type}"/>
+            <arg value="${out}"/>
+        </exec>
+    </target>
+
 </project>
