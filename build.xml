@@ -107,9 +107,9 @@
             <arg value="${in}" />
             <arg value="-xsl" />
             <arg value="${xsl}" />
-            <arg value="-param" />
+            <!-- <arg value="-param" />
             <arg value="base.dir" />
-            <arg value="${base.dir}" />
+            <arg value="${base.dir}" /> -->
         </exec>
     </target>
 
