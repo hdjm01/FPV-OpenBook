@@ -50,9 +50,9 @@
 		</div>
   	</xsl:template>
 
-  	<xsl:template name="user.footer.content">
+  	<!-- <xsl:template name="user.footer.content">
     	<p id="file_create_date" class="info">Created: <xsl:value-of select="date:date-time()" /></p>
-	</xsl:template>
+	</xsl:template> -->
 		
 	<xsl:template match="article/info/date">
 		<p class="date"><xsl:value-of select="."/></p>
