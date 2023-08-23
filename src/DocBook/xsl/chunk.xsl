@@ -27,9 +27,9 @@
  	<xsl:param name="callout.graphics.path">images/callouts/</xsl:param>
  	<xsl:param name="callout.graphics.extension">.svg</xsl:param>
  	
- 	<xsl:param name="navig.graphics">1</xsl:param>
+ 	<!-- <xsl:param name="navig.graphics">1</xsl:param>
  	<xsl:param name="navig.graphics">images/</xsl:param>
- 	 <xsl:param name="navig.graphics.extension">.svg</xsl:param>
+ 	 <xsl:param name="navig.graphics.extension">.svg</xsl:param> -->
  	
  	<xsl:param name="glossary.sort">1</xsl:param>
  	<xsl:param name="bibliography.numbered">1</xsl:param>
