@@ -5,10 +5,12 @@
     <!-- -->
 	<property name="Xalan" value="bin/xalan.jar" />
     <property name="infile" value="./src/DocBook/FPV-OpenBook.xml" />
-    <property name="outfile" value="./build/index.html" />
+    <property name="outfile" value="./build/FPV-OpenBook.html" />
     <property name="pdf" value="./build/FPV-OpenBook.pdf" />
     <property name="xsl-dir" value="./src/DocBook/xsl" />
     <property name="fop" value="\fop-2.3\fop\fop.bat" />
+    <property name="build.dir" value="./build" />
+    <property name="base.dir" value="${build.dir}" />
     <!-- -->
 	<condition property="isWindows">
         <os family="windows" />
@@ -20,12 +22,13 @@
 	<!-- -->
 
     <target name="init" description="prepare">
-        <mkdir dir="./build"/>
-        <mkdir dir="./build/css"/>
-        <mkdir dir="./build/xsd"/>
-        <echo>${user.dir}</echo>
-        <echo>${user.home}</echo>
-        <echo>${basedir}</echo>
+        <mkdir dir="${build.dir}"/>
+        <mkdir dir="${build.dir}/css"/>
+        <mkdir dir="${build.dir}/xsd"/>
+        <echo>user.dir  = ${user.dir}</echo>
+        <echo>user.home = ${user.home}</echo>
+        <echo>build.dir  = ${build.dir}</echo>
+        <echo>base.dir  = ${base.dir}</echo>
     </target>
 
     <target name="copy-files" description="Copy files to build dir">
@@ -51,6 +54,11 @@
             <param name="in" value="${infile}" />
             <param name="out" value="${outfile}" />
             <param name="xsl" value="${xsl-dir}/html.xsl" />
+        </antcall>
+
+        <antcall target="chunk">
+            <param name="in" value="${infile}" />
+            <param name="xsl" value="${xsl-dir}/chunk.xsl" />
         </antcall>
 
     </target>
@@ -87,6 +95,21 @@
             <arg value="${xsl}" />
             <arg value="-out" />
             <arg value="${out}" />
+        </exec>
+    </target>
+
+    <target name="chunk">
+        <echo>using xalan</echo>
+        <echo>${in}</echo>
+        <echo>${xsl}</echo>
+        <exec executable="xalan">
+            <arg value="-in" />
+            <arg value="${in}" />
+            <arg value="-xsl" />
+            <arg value="${xsl}" />
+            <arg value="-param" />
+            <arg value="base.dir" />
+            <arg value="${base.dir}" />
         </exec>
     </target>
 

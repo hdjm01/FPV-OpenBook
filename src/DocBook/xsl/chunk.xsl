@@ -13,11 +13,11 @@
   	<xsl:param name="use.extensions">0</xsl:param>
   	<xsl:param name="tablecolumns.extension">0</xsl:param>
   	<xsl:param name="linenumbering.extension" select="1"></xsl:param>
-  	<xsl:param name="img.src.path">../Bilddaten/</xsl:param>
+  	<xsl:param name="img.src.path">./images/</xsl:param>
   	
   	<xsl:param name="draft.mode">0</xsl:param>
   	
-  	<xsl:param name="base.dir">../html/</xsl:param>
+  	<xsl:param name="base.dir">./build/</xsl:param>
   	
   	<xsl:param name="admon.graphics">1</xsl:param>
   	<xsl:param name="admon.graphics.path">images/</xsl:param>
@@ -44,15 +44,15 @@
 	
 	<xsl:param name="profile.revisionflag">1</xsl:param>
 	
-	<!-- <xsl:template name="user.header.content">
+	<xsl:template name="user.header.content">
 		<div id="header">
-			<h1>Mein FPV</h1>
+			<h1>Open FPV Book</h1>
 		</div>
   	</xsl:template>
-   -->
-  	<!-- <xsl:template name="user.footer.content">
-    	<p id="file_create_date" class="info">Erstellt am: <xsl:value-of select="date:date-time()" /></p>
-	</xsl:template> -->
+
+  	<xsl:template name="user.footer.content">
+    	<p id="file_create_date" class="info">Created: <xsl:value-of select="date:date-time()" /></p>
+	</xsl:template>
 		
 	<xsl:template match="article/info/date">
 		<p class="date"><xsl:value-of select="."/></p>
