@@ -42,7 +42,7 @@
         <antcall target="pdf"/>
     </target>
 
-    <target name="html" description="Create single page">
+    <target name="html" description="Create HTML pages">
 
         <antcall target="xslt-windows">
             <param name="xsl" value="${xsl-dir}/html.xsl"/>
@@ -103,7 +103,10 @@
         <echo>${in}</echo>
         <echo>${xsl}</echo>
         <exec executable="xalan" failonerror="true">
-            <arg value="-in" />
+            <arg value="-Djavax.xml.parsers.DocumentBuilderFactory=org.apache.xerces.jaxp.DocumentBuilderFactoryImpl" />
+			<arg value="-Djavax.xml.parsers.SAXParserFactory=org.apache.xerces.jaxp.SAXParserFactoryImpl" />
+			<arg value="-Dorg.apache.xerces.xni.parser.XMLParserConfiguration=org.apache.xerces.parsers.XIncludeParserConfiguration" />
+			<arg value="-in" />
             <arg value="${in}" />
             <arg value="-xsl" />
             <arg value="${xsl}" />
